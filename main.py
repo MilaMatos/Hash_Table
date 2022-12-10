@@ -14,10 +14,10 @@ while menu == 1:
     print("|Qualquer valor diferente irá sair    |")
     opcao = int(input("\nOpção: "))
     if(opcao == 1):
-        chave = int(input("\nDigite a chave: "))
+        chave = int(input("Digite a chave: "))
         inserir(hash, chave)
     elif(opcao == 2):
-        chave = int(input("\nDigite a chave: "))
+        chave = int(input("Digite a chave: "))
         remover(hash, chave)
     elif(opcao == 3):
         exibir_hash(hash)
