@@ -31,9 +31,12 @@ def remover(hash, chave):
     indice = hashing(hash, chave)
     i = aux_busca(hash, chave)
     if i == -1:
-        print("Chave não existe\n\n")
+        print("\nChave não existe")
+        input("Pressione ENTER para continuar")
     else:
         hash[indice].pop(i)
+        print("\nChave removida com sucesso")
+        input("Pressione ENTER para continuar")
 
 def exibir_hash(hashTable):
     print("\n")
@@ -47,5 +50,6 @@ def exibir_hash(hashTable):
               
         print()
     print("\n")
+    input("\nPressione ENTER para continuar")
 
 

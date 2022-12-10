@@ -1,4 +1,6 @@
 from hashpy import *
+import platform
+import os
 
 tam = int(input("Insira o tamanho da tabela: "))
 hash = [[] for _ in range(tam)]
@@ -8,6 +10,11 @@ exibir_hash(hash)
 
 menu = 1
 while menu == 1:
+    if platform.system()=="Windows":
+        os.system('cls')
+    else: 
+        print("\033c", end="")
+
     print("\n|Digite 1 para inserir uma nova chave |")
     print("|Digite 2 para remover uma chave      |")
     print("|Digite 3 para visualizar a tabela    |")
